@@ -130,3 +130,62 @@ darkTheme_exemple.applyTheme()
 > darkTheme_exemple.applyTheme()
 
 ***
+
+### Creating Item Upgrade
+**Following the Steps**
+- [ ] Create a constant with any name. 
+- [ ] Add item name inside object.
+- [ ] Creating Menu and Upgrade Button.
+- [ ] Creating Function.
+- [ ] Update Item. 
+
+### Stage (1)
+Create a constant with any name. 
+```js
+const exampleItemUpgrade = new Item("")
+```
+- [x] Create a constant with any name. 
+
+### Stage (2)
+add item name inside object
+```js
+const itemUpgrade_example = new Item("gen")// upgrate power
+```
+- [x] Create a constant with any name.
+- [x] add item name inside object 
+
+### Stage (3)
+Creating Menu and Upgrade Button.
+```js
+const menu_example = new MenuBuild()
+menu_example.mount()
+menu_example.addItem("Power Plants", "genUpdate")
+```
+- [x] Create a constant with any name.
+- [x] add item name inside object.
+- [x] Creating Menu and Upgrade Button.
+
+### Stage (4)
+Creating Function.
+```js
+$("#genUpdate").click(() => {
+//code here
+})
+```
+- [x] Create a constant with any name.
+- [x] add item name inside object.
+- [x] Creating Menu and Upgrade Button.
+- [x] Creating Function. 
+
+### Stage (5)
+Update Item.
+```js
+itemUpgrade_example.upgrade()
+```
+
+### Result 
+![result](https://media.discordapp.net/attachments/857742055442874408/884272002259644446/Captura_de_tela_2021-09-06_00-00-28.png)
+
+### (click)
+
+![result](https://media.discordapp.net/attachments/857742055442874408/884271991832600666/Captura_de_tela_2021-09-06_00-00-46.png)
