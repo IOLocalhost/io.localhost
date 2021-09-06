@@ -189,3 +189,16 @@ itemUpgrade_example.upgrade()
 ### (click)
 
 ![result](https://media.discordapp.net/attachments/857742055442874408/884271991832600666/Captura_de_tela_2021-09-06_00-00-46.png)
+
+> Code
+> ```js
+> const itemUpgrade_example = new Item("gen")// upgrate power
+> const menu_example = new MenuBuild()
+> menu_example.mount()
+> menu_example.addItem("Power Plants", "genUpdate")
+> $("#genUpdate").click(() => {
+>   itemUpgrade_example.upgrade()
+> })
+> ```
+
+***
