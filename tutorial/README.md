@@ -144,15 +144,15 @@ Create a constant with any name.
 ```js
 const exampleItemUpgrade = new Item("")
 ```
-- [x] Create a constant with any name. 
+- [x] Create a constant with any name. ( Done )
 
 ### Stage (2)
 add item name inside object
 ```js
 const itemUpgrade_example = new Item("gen")// upgrate power
 ```
-- [x] Create a constant with any name.
-- [x] add item name inside object 
+- [x] Create a constant with any name. ( Done )
+- [x] add item name inside object. ( Done )
 
 ### Stage (3)
 Creating Menu and Upgrade Button.
@@ -161,9 +161,9 @@ const menu_example = new MenuBuild()
 menu_example.mount()
 menu_example.addItem("Power Plants", "genUpdate")
 ```
-- [x] Create a constant with any name.
-- [x] add item name inside object.
-- [x] Creating Menu and Upgrade Button.
+- [x] Create a constant with any name. ( Done )
+- [x] add item name inside object. ( Done )
+- [x] Creating Menu and Upgrade Button. ( Done )
 
 ### Stage (4)
 Creating Function.
@@ -172,10 +172,10 @@ $("#genUpdate").click(() => {
 //code here
 })
 ```
-- [x] Create a constant with any name.
-- [x] add item name inside object.
-- [x] Creating Menu and Upgrade Button.
-- [x] Creating Function. 
+- [x] Create a constant with any name. ( Done )
+- [x] add item name inside object. ( Done )
+- [x] Creating Menu and Upgrade Button. ( Done )
+- [x] Creating Function. ( Done )
 
 ### Stage (5)
 Update Item.
@@ -198,6 +198,266 @@ itemUpgrade_example.upgrade()
 > menu_example.addItem("Power Plants", "genUpdate")
 > $("#genUpdate").click(() => {
 >   itemUpgrade_example.upgrade()
+> })
+> ```
+
+***
+### Creating a complete menu
+* ***In our menu will include***
+    * Upgrade Walls
+    * Upgrade Generator.
+    * Upgrade All Turrets.
+    * Themes.
+
+
+**Following the Steps**
+- [ ] Create a constant with any name.
+- [ ] Defining update items.
+- [ ] Defining Themes.
+- [ ] Creating the menu with buttons.
+- [ ] defining the functions
+
+### Stage (1/2)
+Create a constant with any name.
+```js
+const boulders = new Item("boulder")
+const spikes = new Item("spikes")
+const micro = new Item("micro")
+const power = new Item("power")
+
+const rapid = new Item("rapidTurret")
+const gatlin = new Item("gatlinTurret")
+const ranged = new Item("rangedTurret")
+const spotter = new Item("spotterTurret")
+const anti = new Item("Antitank")
+const semi = new Item("semiAuto")
+```
+- [x] Create a constant with any name. ( Done )
+- [x] Defining update items. ( Done )
+
+### Stage (3)
+Defining Themes.
+```js
+    const whiteTheme = new Theme("#ebebeb", "#d6d6d6", "rgba(0,0,0,0.08)", "rgba(255, 0, 0, 0.1)")
+    const darkTheme = new Theme( "rgb(10, 10, 10)" , "rgb(20, 20, 20)" , "#222" , "rgba(200, 0, 0, 0.5)")
+    const daculaTheme = new Theme("#1e1a30", "#454545", "#bc04bf", "#04bf23")
+    const vueTheme = new Theme("#35495E", "#37587a", "rgba(196, 196, 196, 0.5)", "#41B883")
+    const vscodeTheme = new Theme("#242220", "#383533", "#17692b", "#009dff")
+    const githubWhiteTheme = new Theme("#ebebeb", "#8a8a88", "#8f000e", "#00158f")
+    const githubDarkTheme = new Theme("#0d1117", "#263142", "#7d0b7b", "#0b3b7d")
+```
+- [x] Create a constant with any name. ( Done )
+- [x] Defining update items. ( Done )
+- [x] Defining Themes. ( DOne )
+
+### Stage (4) 
+Creating the menu with buttons.
+```js
+const menu = new MenuBuild()
+menu.mount()
+menu.addItem("Boulders","boulder")
+menu.addItem("Spikes","spike")
+menu.addItem("Micro-Gen","micro")
+menu.nextLine()// line-break
+menu.addItem("Rapid Turret","rapid")
+menu.addItem("Gatlin Turret","gatlin")
+menu.addItem("Ranged Turret","ranged")
+menu.addItem("Spotter Turret","sppoter")
+menu.nextLine()// line-break
+menu.addItem("Anti-Tank","anti")
+menu.addItem("Semi Auto","semi")
+menu.nextLine()// line-break
+menu.addItem("White", "whiteTheme")
+menu.addItem("Dark", "darkTheme")
+menu.addItem("Dracula", "daculaTheme")
+menu.addItem("Vue", "vueTheme")
+menu.addItem("Visual Studio Code", "vscodeTheme")
+menu.addItem("Github White", "githubWhiteTheme")
+menu.addItem("Github Dark", "githubDarkTheme")
+```
+- [x] Create a constant with any name. ( Done )
+- [x] Defining update items. ( Done )
+- [x] Defining Themes. ( Done )
+- [x] Creating the menu with buttons. ( Done )
+
+
+### Stage (5)
+defining the functions
+
+```js
+$("#boulder").click(() => { 
+    boulders.upgrade()
+})
+
+$("#spike").click(() => { 
+    spikes.upgrade()
+})
+
+$("#micro").click(() => { 
+    micro.upgrade()
+})
+
+$("#rapid").click(() => { 
+    rapid.upgrade()
+})
+
+$("#gatlin").click(() => { 
+    gatlin.upgrade()
+})
+
+$("#sppoter").click(() => { 
+    sppoter.upgrade()
+})
+
+$("#anti").click(() => {
+    anti.upgrade()
+})
+
+$("#semi").click(() => {
+    semi.upgrade()
+})
+
+$("#whiteTheme").click(() => {
+    whiteTheme.applyTheme() 
+})
+
+$("#darkTheme").click(() => { 
+    darkTheme.applyTheme()
+})
+
+$("#daculaTheme").click(() => { 
+    daculaTheme.applyTheme() 
+})
+
+$("#vueTheme").click(() => { 
+    vueTheme.applyTheme() 
+})
+
+$("#vscodeTheme").click(() => { 
+    vscodeTheme.applyTheme() 
+})
+
+$("#githubWhiteTheme").click(() => { 
+    githubWhiteTheme.applyTheme() 
+})
+
+$("#githubDarkTheme").click(() => { 
+    githubDarkTheme.applyTheme() 
+})
+```
+- [x] Create a constant with any name. ( Done )
+- [x] Defining update items. ( Done )
+- [x] Defining Themes. ( Done )
+- [x] Creating the menu with buttons. ( Done )
+- [x] Defining the functions. ( Done )
+
+### Result
+
+![result](https://media.discordapp.net/attachments/857742055442874408/884412048044351538/Captura_de_tela_2021-09-06_09-16-57.png)
+
+> Code
+> ```js
+> 
+> const boulders = new Item("boulder")
+> const spikes = new Item("spikes")
+> const micro = new Item("micro")
+> const power = new Item("power")
+>
+> const rapid = new Item("rapidTurret")
+> const gatlin = new Item("gatlinTurret")
+> const ranged = new Item("rangedTurret")
+> const spotter = new Item("spotterTurret")
+> const anti = new Item("Antitank")
+> const semi = new Item("semiAuto")
+> 
+> const whiteTheme = new Theme("#ebebeb", "#d6d6d6", "rgba(0,0,0,0.08)", "rgba(255, 0, 0, 0.1)")
+> const darkTheme = new Theme( "rgb(10, 10, 10)" , "rgb(20, 20, 20)" , "#222" , "rgba(200, 0, 0, 0.5)")
+> const daculaTheme = new Theme("#1e1a30", "#454545", "#bc04bf", "#04bf23")
+> const vueTheme = new Theme("#35495E", "#37587a", "rgba(196, 196, 196, 0.5)", "#41B883")
+> const vscodeTheme = new Theme("#242220", "#383533", "#17692b", "#009dff")
+> const githubWhiteTheme = new Theme("#ebebeb", "#8a8a88", "#8f000e", "#00158f")
+> const githubDarkTheme = new Theme("#0d1117", "#263142", "#7d0b7b", "#0b3b7d")
+>
+> const menu = new MenuBuild()
+> menu.mount()
+> menu.addItem("Boulders","boulder")
+> menu.addItem("Spikes","spike")
+> menu.addItem("Micro-Gen","micro")
+> menu.nextLine()// line-break
+> menu.addItem("Rapid Turret","rapid")
+> menu.addItem("Gatlin Turret","gatlin")
+> menu.addItem("Ranged Turret","ranged")
+> menu.addItem("Spotter Turret","sppoter")
+> menu.nextLine()// line-break
+> menu.addItem("Anti-Tank","anti")
+> menu.addItem("Semi Auto","semi")
+> menu.nextLine()// line-break
+> menu.addItem("White", "whiteTheme")
+> menu.addItem("Dark", "darkTheme")
+> menu.addItem("Dracula", "daculaTheme")
+> menu.addItem("Vue", "vueTheme")
+> menu.addItem("Visual Studio Code", "vscodeTheme")
+> menu.addItem("Github White", "githubWhiteTheme")
+> menu.addItem("Github Dark", "githubDarkTheme")
+> 
+> $("#boulder").click(() => {
+>     boulders.upgrade()
+> })
+> 
+> $("#spike").click(() => {
+>     spikes.upgrade()
+> })
+> 
+> $("#micro").click(() => {
+>     micro.upgrade()
+> })
+> 
+> $("#rapid").click(() => {
+>     rapid.upgrade()
+> })
+> 
+> $("#gatlin").click(() => {
+>    gatlin.upgrade()
+> })
+>
+> $("#sppoter").click(() => {
+>    sppoter.upgrade()
+> })
+>
+> $("#anti").click(() => {
+>    anti.upgrade()
+> })
+>
+> $("#semi").click(() => {
+>     semi.upgrade()
+> })
+> 
+> $("#whiteTheme").click(() => {
+>    whiteTheme.applyTheme()
+> })
+> 
+> $("#darkTheme").click(() => {
+>     darkTheme.applyTheme()
+> })
+>
+> $("#daculaTheme").click(() => {
+>     daculaTheme.applyTheme()
+> })
+>
+> $("#vueTheme").click(() => {
+>     vueTheme.applyTheme()
+> })
+> 
+> $("#vscodeTheme").click(() => {
+>     vscodeTheme.applyTheme()
+> })
+> 
+> $("#githubWhiteTheme").click(() => {
+>    githubWhiteTheme.applyTheme()
+> })
+> 
+> $("#githubDarkTheme").click(() => {
+>     githubDarkTheme.applyTheme()
 > })
 > ```
 
