@@ -30,8 +30,9 @@ The code you will assemble must be inside, because outside there are only the se
 > 
 > recommendation do not mess out.
 
-## Use
-With the first steps we will easily create a menu with a single value
+# Use
+
+### Create a menu with a single value.
 
 **Following the Steps**
 - [ ] Create a constant with any name.
@@ -42,7 +43,7 @@ With the first steps we will easily create a menu with a single value
 ### Stage (1)
 Create a constant with any name.
 ```js
-const example = new MenuBuild()
+const menuHello_example = new MenuBuild()
 ```
 - [x] Create a constant with any name. ( Done )
 
@@ -50,7 +51,7 @@ const example = new MenuBuild()
 ### Stage (2) 
 Using the constant to build the menu.
 ```js
-example.mount()
+menuHello_example.mount()
 ```
 - [x] Create a constant with any name. ( Done )
 - [x] Using the constant to build the menu. ( Done )
@@ -59,7 +60,7 @@ example.mount()
 ### Stage (3)
 Creating the Button and function ID.
 ```js
-example.addItem("Hello World","hello")
+menuHello_example.addItem("Hello World","hello")
 ```
 - [x] Create a constant with any name. ( Done )
 - [x] Using the constant to build the menu. ( Done )
@@ -75,9 +76,57 @@ $("#hello").click(() => { alert('Hello World') })
 - [x] Creating the Button and function ID. ( Done )
 - [x] Create function. ( Done )
 
+### Result
+
+![result](https://media.discordapp.net/attachments/857742055442874408/884262946409156608/Captura_de_tela_2021-09-05_23-24-43.png)
+
 > Code
 > ```js
-> const example = new MenuBuild()
-> example.mount()
-> example.addItem("Hello World", "hello")
+> const menuHello_example = new MenuBuild()
+> menuHello_example.mount()
+> menuHello_example.addItem("Hello World", "hello")
 > $("#hello").click(() => { alert('Hello World')})
+
+***
+
+### Creating themes
+**Following the Steps**
+- [ ] Create a constant with any name.
+- [ ] Adding to the colors in the object.
+- [ ] Applying the theme.
+
+### Stage (1)
+Create a constant with any name.
+```js
+const example = new Theme()
+```
+- [x] Create a constant with any name. ( Done )
+
+### Stage (2)
+Adding to the colors in the object.
+```js
+// There are four color values, they follow the game order (backgroundColor, outerColor, indicatorColor, redColor)
+const darkTheme_exemple = new Theme( "rgb(10, 10, 10)" , "rgb(20, 20, 20)" , "#222" , "rgba(200, 0, 0, 0.5)")
+```
+- [x] Create a constant with any name. ( Done )
+- [x] Adding to the colors in the object. ( Done )
+
+### Stage (3)
+ Applying the theme.
+```js
+darkTheme_exemple.applyTheme()
+```
+- [x] Create a constant with any name. ( Done )
+- [x] Adding to the colors in the object. ( Done )
+- [x] Applying the theme. ( Done )
+
+### Result
+
+![result](https://media.discordapp.net/attachments/857742055442874408/884266982973767710/Captura_de_tela_2021-09-05_23-40-51.png)
+
+> Code
+> ```js
+> const darkTheme_exemple = new Theme( "rgb(10, 10, 10)" , "rgb(20, 20, 20)" , "#222" , "rgba(200, 0, 0, 0.5)")
+> darkTheme_exemple.applyTheme()
+
+***
